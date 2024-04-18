@@ -24,20 +24,36 @@ public class login {
     L.enter_username();
 	}
 	
-//	@Then ("click on login button")
-//	public void Then_click_on_login_button() {
-//	L.click_on_login_button();
+	@Then ("Enter Password")
+    public void enter_password() throws InterruptedException {
+	L.Enter_Password();
+	}
+	@Then("click on login button")
+	public void click_on_login_button() throws InterruptedException {
+	L.click_on_login_button();
+	   
+	}
+	
+	@Then ("click on add to cart button") 
+	public void click_on_add_to_cart_button() throws InterruptedException {
+	L.click_on_add_to_cart_button();
+	}
+	
+//	@Then ("click on Remove button") 
+//	public void click_on_Remove_button() throws InterruptedException {
+//		Thread.sleep(900);
+//	L.click_on_Remove_button();
 //	}
-//	@Then("I verify the browser is launched successfully")
-//	public void i_verify_the_browser_is_launched_successfully() {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new io.cucumber.java.PendingException();
-//	}
-//
-//	@Then("User go to website")
-//	public void user_go_to_website() {
-//	  
-//	}
-//
-
+	
+	
+	@Then ("click on cart button")
+	public void click_on_cart_button() {
+		L.click_on_cart_button();
+	}
+	
+	@Then ("click on Checkout button")
+	public void click_on_Checkout_button() throws InterruptedException {
+		L.click_on_Checkout_button();
+	}
 }
+

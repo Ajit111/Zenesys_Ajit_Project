@@ -13,3 +13,4 @@ plugin = {"pretty", "html:target/HTML-reports/test.html"})
 public class RunnerTest {
 
 }
+
