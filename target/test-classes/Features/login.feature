@@ -2,5 +2,7 @@ Feature: Launch browser
 @login
   Scenario: Open Chrome browser
     Given I Open the Chrome Browser
-   # Then I verify the browser is launched successfully
-   # Then User go to website
+    Given Enter Username
+    #Then Enter Password
+    #Then click on login button
+   # Then User go to website homepage
