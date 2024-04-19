@@ -33,27 +33,35 @@ public class login {
 	L.click_on_login_button();
 	   
 	}
-	
-	@Then ("click on add to cart button") 
-	public void click_on_add_to_cart_button() throws InterruptedException {
-	L.click_on_add_to_cart_button();
-	}
-	
-//	@Then ("click on Remove button") 
-//	public void click_on_Remove_button() throws InterruptedException {
-//		Thread.sleep(900);
-//	L.click_on_Remove_button();
+//	
+//	@Then ("click on add to cart button") 
+//	public void click_on_add_to_cart_button() throws InterruptedException {
+//	L.click_on_add_to_cart_button();
+//	}
+//	
+////	@Then ("click on Remove button") 
+////	public void click_on_Remove_button() throws InterruptedException {
+////		Thread.sleep(900);
+////	L.click_on_Remove_button();
+////	}
+//	
+//	
+//	@Then ("click on cart button")
+//	public void click_on_cart_button() {
+//		L.click_on_cart_button();
+//	}
+//	
+//	@Then ("click on Checkout button")
+//	public void click_on_Checkout_button() throws InterruptedException {
+//		L.click_on_Checkout_button();
 //	}
 	
+	@Then ("Homepage should display") 
 	
-	@Then ("click on cart button")
-	public void click_on_cart_button() {
-		L.click_on_cart_button();
-	}
-	
-	@Then ("click on Checkout button")
-	public void click_on_Checkout_button() throws InterruptedException {
-		L.click_on_Checkout_button();
-	}
+	public void Homepage_should_display() {  
+     L.Homepage_should_display();
+	 }
 }
+
+
 

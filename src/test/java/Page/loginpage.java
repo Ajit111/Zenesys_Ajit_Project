@@ -2,10 +2,13 @@ package Page;
 
 
 import org.openqa.selenium.By;
+import static org.junit.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
+import dev.failsafe.internal.util.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class loginpage {
@@ -44,27 +47,41 @@ public class loginpage {
 		//driver.findElement(By.xpath("/html/body/app-root/body/app-sign-in/div/form/div/div/div[2]/div/div[4]/button")).click();
 		
 		driver.findElement(By.id("login-button")).click();
+		//driver.close();
 	}
  
-	public void click_on_add_to_cart_button() {
-		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
-	}
-	
-//	public void click_on_Remove_button() throws InterruptedException {
+//	public void click_on_add_to_cart_button() {
+//		driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+//	}
+//	
+////	public void click_on_Remove_button() throws InterruptedException {
+////		Thread.sleep(900);
+////		driver.findElement(By.id("remove-sauce-labs-backpack")).click();
+////	}
+//	
+//	public void click_on_cart_button() {
+//		driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")).click();
+//		
+//	}
+//	
+//	public void click_on_Checkout_button() throws InterruptedException {
+//		driver.findElement(By.id("checkout")).click();
 //		Thread.sleep(900);
-//		driver.findElement(By.id("remove-sauce-labs-backpack")).click();
+//		driver.close();
 //	}
 	
-	public void click_on_cart_button() {
-		driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div[1]/div[3]/a/span")).click();
-		
-	}
-	
-	public void click_on_Checkout_button() throws InterruptedException {
-		driver.findElement(By.id("checkout")).click();
-		Thread.sleep(900);
-		driver.close();
-	}
+	 public void Homepage_should_display() {  
+
+		  String expectedResult= "Home"; 
+
+		  String ActualResult = driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/span")).getText();
+
+		  assertEquals("Home", expectedResult,ActualResult );
+		  //driver.close();
+	 }
+		  
+		  
+
 	
 }
 
