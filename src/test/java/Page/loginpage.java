@@ -153,7 +153,7 @@ public class loginpage extends BaseClass  {
 	public void Click_on_Finish_Button() throws InterruptedException {
 
 		driver.findElement(By.id("finish")).click();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 
 	}
 
